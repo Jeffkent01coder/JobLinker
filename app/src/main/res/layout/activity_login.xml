@@ -11,6 +11,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/login"
         />
 
@@ -46,8 +47,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_marginVertical="10dp"
-        app:boxStrokeColor="#1c6ba4"
-        app:hintTextColor="#1c6ba4"
+        app:boxStrokeColor="#4CAF50"
+        app:hintTextColor="#4CAF50"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginHorizontal="30dp"
         android:layout_height="wrap_content">
@@ -75,8 +76,8 @@
         android:layout_width="match_parent"
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="30dp"
-        app:boxStrokeColor="#1c6ba4"
-        app:hintTextColor="#1c6ba4"
+        app:boxStrokeColor="#4CAF50"
+        app:hintTextColor="#4CAF50"
         app:passwordToggleEnabled="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_height="wrap_content">
@@ -97,7 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:backgroundTint="#1c6ba4"
+        android:backgroundTint="#4CAF50"
         android:layout_marginHorizontal="100dp"
         />
 
@@ -114,7 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:backgroundTint="#1c6ba4"
+        android:backgroundTint="#4CAF50"
         android:layout_marginHorizontal="100dp"
         />
 
