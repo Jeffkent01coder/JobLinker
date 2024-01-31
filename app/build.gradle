@@ -1,16 +1,17 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt' // For annotation processing with Room
 }
 
 android {
     namespace 'com.example.joblinker'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.joblinker"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -45,4 +46,19 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Room Database
+    implementation 'androidx.room:room-runtime:2.5.0' // Update to the latest version
+    kapt 'androidx.room:room-compiler:2.5.0' // Update to the latest version
+    implementation 'androidx.room:room-ktx:2.5.0' // Update to the latest version
+
+    // ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+
+    // Material Design Components
+    implementation 'com.google.android.material:material:1.5.0'
+
+    // Coroutines (if you want to use coroutines)
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
 }
